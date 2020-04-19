@@ -1,0 +1,17 @@
+$default-font: "roboto-example", sans-serif;
+$fiolet: #aa1777;
+$blue: #21284A;
+
+$gradient: linear-gradient(to right top, #be3434, #b12738, #a31b3b, #94103c, #85063d);
+$burble-gradient: linear-gradient(to left top, #af0e3c, #921554, #6b245e, #432a5a, #21284a);
+
+
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, mega-lg: 1400px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, mega-lg: 1400px);
+
+$gutter: $grid-gutter-width;

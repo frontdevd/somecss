@@ -1,0 +1,141 @@
+
+
+div#coming-soon {
+  background: $blue;
+  width: 100vw;
+  height: 100vh;
+
+  .background {
+    .burble {
+      &:nth-child(1) {
+        @include burble_mixin (50px, 50px, burble1);
+      }
+
+      &:nth-child(2) {
+        @include burble_mixin (150px, 150px, burble2);
+      }
+
+      &:nth-child(3) {
+        @include burble_mixin (150px, 150px, burble3);
+      }
+
+      &:nth-child(4) {
+        display: none;
+        @include burble_mixin (80px, 80px, burble4);
+      }
+    }
+  }
+  .coming-wrapp {
+      position: absolute;
+      width: 100%;
+      top: 23%;
+      text-align: center;
+      color: #ffffff;
+
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 126px;
+        margin: 0 0 80px 0;
+        @include media-breakpoint-down(lg) {
+          font-size: 92px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          font-size: 50px;
+        }
+      }
+
+      h1.shadow {
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: -50px;
+        width: 100%;
+        color: #00000014;
+        font-size: 150px;
+
+        @include media-breakpoint-down(sm) {
+          display: none;
+        }
+
+
+        @include media-breakpoint-down(lg) {
+          font-size: 100px;
+        }
+      }
+
+
+      @include media-breakpoint-down(sm) {
+        font-size: 36px;
+      }
+
+      .subscribe {
+        position: relative;
+        width: 30%;
+        margin: 0 auto;
+        transition: all 0.8s ease-in;
+
+        input[name=subscibe] {
+          width: 100%;
+          height: 54px;
+          border-radius: 27px;
+          font-size: 16px;
+          box-shadow: 0 3px 10px rgba(0, 0, 0, .1);
+          padding: 0 15px 0 30px;
+          transition: all .4s ease-in-out;
+          background-image: $gradient;
+          background-color: rgb(33, 40, 74);
+          color: #fff;
+          border: 0;
+
+
+        }
+
+        button {
+          position: absolute;
+          top: 6px;
+          right: 8px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50px;
+          background: #fff;
+          border: 0;
+          box-shadow: 0 0 0 #9C27B0;
+          animation: pulse 1.5s infinite;
+          @include media-breakpoint-down(sm) {
+            top: 15px;
+
+          }
+          img {
+            width: 20px;
+            top: 11px;
+            position: absolute;
+            left: 10px;
+
+          }
+        }
+
+        @include media-breakpoint-down(md) {
+          width: 70%;
+        }
+        @include media-breakpoint-down(xs) {
+          width: 90%;
+        }
+      }
+    }
+
+  > img {
+    width: 38%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    animation: rotate 100s infinite;
+  }
+
+}
+
+div#404 {
+  background: $blue;
+  width: 100vw;
+  height: 100vh;
+
+}

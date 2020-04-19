@@ -1,0 +1,23 @@
+
+
+div#not-found {
+  background: $gradient;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+
+
+  .not-found-wrapp {
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+    h1 {
+      font-size: 256px;
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+
+}

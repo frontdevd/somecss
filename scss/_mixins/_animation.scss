@@ -1,0 +1,109 @@
+// *******************************coming-soon page*****************
+
+// button pulse animate -------------------
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.15);
+  }
+  70% {
+    box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.15);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.15);
+  }
+}
+// button pulse animate -------------------
+
+// rotate animate -------------------
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+// rotate animate -------------------
+
+
+// background burble -------------------
+@keyframes burble1 {
+  0% {
+    top: 20%;
+    left: 20%;
+  }
+
+  50% {
+    top: 18%;
+    left: 18%;
+  }
+  100% {
+    top: 20%;
+    left: 20%;
+  }
+
+}
+@keyframes burble2 {
+  0% {
+    top: 40%;
+    right: 15%;
+  }
+
+  50% {
+    top: 38%;
+    right: 17%;
+  }
+  100% {
+    top: 40%;
+    right: 15%;
+
+  }
+
+}
+@keyframes burble3 {
+  0% {
+    top: 60%;
+    left: 10%;
+  }
+
+  50% {
+    top: 58%;
+    left: 12%;
+  }
+  100% {
+    top: 60%;
+    left: 10%;
+  }
+
+}
+@keyframes burble4 {
+  0% {
+    top: 60%;
+    left: 50%;
+  }
+
+  50% {
+    top: 58%;
+    left: 45%;
+  }
+  100% {
+    top: 60%;
+    left: 50%;
+  }
+
+}
+
+@mixin burble_mixin($height, $width, $animat_name) {
+  height: $height;
+  width: $width;
+  position: absolute;
+  border-radius: 50%;
+  background-image: $burble-gradient;
+  animation: $animat_name 7s infinite;
+  transform: rotate(360deg);
+}
+
+
+// background burble -------------------
+
+// *******************************coming-soon page*****************
